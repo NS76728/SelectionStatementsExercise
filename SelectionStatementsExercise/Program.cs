@@ -29,28 +29,29 @@ namespace SelectionStatementsExercise
 
             Console.WriteLine("What is your favorit subject?");
             Console.WriteLine("1: Math 2: Science 3: History 4: English 5: Art ");
-            int use2 = int.Parse(Console.ReadLine());
+            string use2 = Console.ReadLine();
+                //int.Parse(Console.ReadLine());
 
 
             switch (use2)
             {
-                case 1:
+                case "math":
                     Console.WriteLine("Math is cool");
                     break;
-                case 2:
+                case "science":
                     Console.WriteLine("Science is cool");
                     break;
-                case 3:
+                case "history":
                     Console.WriteLine("History is cool");
                     break;
-                case 4:
+                case "english":
                     Console.WriteLine("English is cool");
                     break;
-                case 5:
+                case "art":
                     Console.WriteLine("Art is cool");
                     break;
                 default:
-                    Console.WriteLine("Thats not a subject choice");
+                    Console.WriteLine("Thats not a subject choice or you spelt it wrong. (All lower case)");
                     break;
             }
 
